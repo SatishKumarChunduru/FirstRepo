@@ -4,9 +4,17 @@
   <groupId>com.sat</groupId>
   <artifactId>SampleMavenProject</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <!-- <version>1.0-SNAPSHOT</version> -->
   <name>SampleMavenProject</name>
   <url>http://maven.apache.org</url>
+  
+  <!--The identifier of the parent POM-->
+    <parent>
+		<groupId>com.sat</groupId>
+		<artifactId>SampleParentProject</artifactId>
+		<version>1.0-SNAPSHOT</version>
+    </parent>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
