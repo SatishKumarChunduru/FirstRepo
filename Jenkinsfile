@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Clean') {
       steps {
-        bat 'mvn clean'
+        bat 'mvn clen'
       }
     }
     stage('End Message') {
